@@ -131,20 +131,44 @@ header ul li {
 
 /*what*/
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap:25px;
-    
+
+.introw {
+    font-family: Roboto;
+    font-size: 55px;
+    padding-right: 50px;
+    color: white;
+    float: right;
 }
+.grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 500px;
+    grid-gap: 25px;
+    justify-content: center;
+}
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .grid-container {
+        grid-gap: 200px;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) {
+    .grid-container {
+    grid-gap: 200px;
+}
+
+}
+
+
+
 .galleri {
-    
-    
+    padding: 25px;
 }
     .galleri img {
         width: 100%;
         height: auto;
-        
+        object-fit: cover;
     }
 .galleri p{
     color:white;
@@ -170,36 +194,45 @@ header ul li {
 /*how*/
 
 
-
+.network {
+    margin: auto;
+    width: 60%;
+}
 .introh {
-    grid-column: span 5;
     font-family: Roboto;
     font-size: 55px;
     padding-right: 50px;
     color: white;
     float: right;
 }
-.spaceh {
-    grid-column: span 7;
-}
 
-.network {
-    grid-column: span 12;
-}
+
 .network p {
     font-family: Roboto;
     font-size: 55px;
     color: white;
-    float: left;
+    padding-bottom:10px;
+    
 }
     .network a {
-        width: 200px;
-        height: 200px;
+        font-family: Roboto;
+        font-size: 55px;
+        color: white;
+        
+        text-decoration:none;
     }
+    .network a:hover{
+        text-decoration:underline;
+
+    }
+
 .infoto img {
-    width:200px;
-    height:200px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    border:5px solid white;
+    border: 5px solid white;
     border-color: white;
+}
+.some p{
+    padding-bottom:50px;
 }
