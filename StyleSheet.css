@@ -1,0 +1,205 @@
+﻿* {
+    margin: 0px;
+    
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+#who {
+    background-color: #00171F;
+}
+#what {
+    background-color: #003459;
+}
+#how {
+    background-color: #00A8E8;
+}
+
+/*header*/
+
+header{
+    width:60%;
+    height:10%;
+    margin:auto;
+    
+}
+    header a {
+        list-style: none;
+        color: white;
+        font-family: Roboto;
+        font-size: 45px;
+        text-decoration: none;
+    }
+        header a:hover {
+            color:darkgray;
+        }
+header ul {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+header ul li {
+    list-style:none;
+    margin: auto;
+    padding: 25px;
+}
+
+/*skal havde hjælp til*/
+@media screen and (min-width:1265px) {
+    header ul li {
+        float: none;
+        width: 100%;
+    }
+}
+
+/*index*/
+
+.colum-f {
+    padding-top: 250px;
+    width: 50%;
+    color: white;
+    float: left;
+    height: 100%;
+}
+
+    .colum-f h1 {
+        font-family: Roboto;
+        font-size: 60px;
+        color: #00A8E8;
+    }
+    .colum-f h2 {
+        font-family: Roboto;
+        font-size: 45px;
+        color: #F6F6F6;
+    }
+
+
+/*who*/
+
+
+.grid-container-who {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.space{
+    grid-column:span 8;
+}
+.intro {
+    grid-column: span 4;
+    font-family: Roboto;
+    font-size: 55px;
+    padding-right: 50px;
+    color: white;
+    float:right;
+    
+}
+.headshot {
+    grid-column: span 6;
+    max-height:800px;
+
+}
+
+    .headshot img {
+        width: 100%;
+        height: 100%;
+        object-fit:contain;
+    }
+
+.about {
+    grid-column:span 6;
+    padding:5px;
+}
+
+.about p {
+    color:aliceblue;
+    font-family:Arial;
+    padding: 35px 0px 0px 0px;
+    font-size:30px;
+}
+
+
+/*what*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:25px;
+    
+}
+.galleri {
+    
+    
+}
+    .galleri img {
+        width: 100%;
+        height: auto;
+        
+    }
+.galleri p{
+    color:white;
+    font-family:Arial;
+    font-size:30px;
+}
+.Sprite {
+    height: 500px;
+    width: 500px;
+    background: url('/image/galleri/sprite.png') 0 0 no-repeat;
+    animation: play 2s steps(20) infinite;
+}
+
+@keyframes play {
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: -10000px;
+    }
+}
+/*how*/
+
+
+
+.introh {
+    grid-column: span 5;
+    font-family: Roboto;
+    font-size: 55px;
+    padding-right: 50px;
+    color: white;
+    float: right;
+}
+.spaceh {
+    grid-column: span 7;
+}
+
+.network {
+    grid-column: span 12;
+}
+.network p {
+    font-family: Roboto;
+    font-size: 55px;
+    color: white;
+    float: left;
+}
+    .network a {
+        width: 200px;
+        height: 200px;
+    }
+.infoto img {
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:5px solid white;
+    border-color: white;
+}
